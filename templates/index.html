@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI HTML Page</title>
+</head>
+<body>
+    <h1>Posts</h1>
+    {% for post in data %}
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.text }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
